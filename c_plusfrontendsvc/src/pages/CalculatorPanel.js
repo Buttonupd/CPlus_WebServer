@@ -23,8 +23,6 @@ function CalculatorPanel(props){
         {text:"+", handler:() => props.operationClicked("Add")},
         {text:"=", handler:() => props.equalClicked()},
 
-
-
     ] ;
 
     const calc_buttons = button.map((value, index) => {
@@ -36,7 +34,7 @@ function CalculatorPanel(props){
 
     return (
         <div className="calculator-grid-container">
-            <CalculatorDisplay />
+            <CalculatorDisplay text = {props.result}/>
             {calc_buttons}
         </div>
     );
