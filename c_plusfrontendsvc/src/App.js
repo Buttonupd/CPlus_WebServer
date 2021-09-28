@@ -1,13 +1,13 @@
 import './App.css';
-// import CalculatorButton from './pages/calculatorButton';
-import CalculatorPanel from './pages/CalculatorPanel';
+import Calculator from './pages/Calculator';
+import calculatorApi from './pages/CalculatorApi';
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
-        <CalculatorPanel />
+        <Calculator calculateApi = {new calculatorApi("")} />
       </header>
     </div>
   );
