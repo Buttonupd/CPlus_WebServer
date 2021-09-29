@@ -1,6 +1,6 @@
 import React, { Component } from 'react' ;
 import CalculatorPanel  from './CalculatorPanel';
-import CalculatorApi from './CalculatorApi';
+
 // initialize and a class calc and define class properties
 // functions to access private class props.
 //constructor to instantiate class object/s
@@ -29,8 +29,7 @@ class Calculator extends Component {
         };
 
         if((operation === "subtract" || operation ===  "add") &&
-            this.state.numbers[this.state.numberId] === "" 
-        )
+            this.state.numbers[this.state.numberId] === "")
         {
             this.numberHandler(operation === "subtract" ? "-" : "+") ;
             return ;
@@ -42,7 +41,7 @@ class Calculator extends Component {
     setOPeration(operation){
         this.setState({
             operation:operation,
-        })
+        });
 
         this.nextNumber() ;
 
@@ -56,7 +55,7 @@ class Calculator extends Component {
             {
                 result:this.state.numbers[newId],
                 numberId: newId ,
-            })
+            });
 
     }
 
@@ -84,7 +83,7 @@ class Calculator extends Component {
     }
 
     // this functions add a "."(dot) to the numbers
-    // for floating point numbers
+    // for floating point values
     dotHandler(){
 
         const newNumber = this.state.numbers[this.state.numberId] + ".";
@@ -115,7 +114,7 @@ class Calculator extends Component {
             return ;
         }
 
-        this.props.CalculatorApi.calculate(
+        this.props.calculatorApi.calculate(
             this.state.numbers[0],
             this.state.numbers[1],
             this.state.operation,

@@ -1,4 +1,4 @@
-class CalculatorApi{
+class calculatorApi{
     constructor(serviceAddress){
         this.serviceAddress = serviceAddress ;
 
@@ -25,4 +25,4 @@ class CalculatorApi{
 
 }
 
-export default CalculatorApi;
+export default calculatorApi;
