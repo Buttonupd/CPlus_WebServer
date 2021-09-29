@@ -1,4 +1,4 @@
-class calculatorApi{
+class CalculatorApi{
     constructor(serviceAddress){
         this.serviceAddress = serviceAddress ;
 
@@ -18,11 +18,11 @@ class calculatorApi{
                 },
                 (err) => {
                     handler(err);
-                    console.log(`Experienced errors :: ${err}`);
+                   
                 }
                 )
     }
 
 }
 
-export default calculatorApi;
+export default CalculatorApi;

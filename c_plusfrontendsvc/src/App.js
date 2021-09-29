@@ -1,13 +1,13 @@
 import './App.css';
 import Calculator from './pages/Calculator';
-import calculatorApi from './pages/CalculatorApi';
+import CalculatorApi from './pages/CalculatorApi';
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
-        <Calculator calculateApi = {new calculatorApi("")} />
+        <Calculator calculatorApi = {new CalculatorApi("http://127.0.0.1:8000")} />
       </header>
     </div>
   );

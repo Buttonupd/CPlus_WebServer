@@ -1,9 +1,10 @@
 import React, { Component } from 'react' ;
 import CalculatorPanel  from './CalculatorPanel';
-
+import CalculatorApi from './CalculatorApi';
 // initialize and a class calc and define class properties
 // functions to access private class props.
 //constructor to instantiate class object/s
+
 class Calculator extends Component {
 
     constructor(props){
@@ -27,23 +28,14 @@ class Calculator extends Component {
             return;
         };
 
-        if((operation === "Subtract" || operation ===  "Add") &&
+        if((operation === "subtract" || operation ===  "add") &&
             this.state.numbers[this.state.numberId] === "" 
         )
         {
-            this.numberHandler(operation === "Subtract" ? "-" : "+") ;
+            this.numberHandler(operation === "subtract" ? "-" : "+") ;
             return ;
         } 
         this.setOPeration(operation);
-
-    }
-
-    // function refered below will monitor the state of the calc comp 
-    // update state objects
-    numberHandler(number){
-
-        const newNumber = this.state.numbers[this.state.numberId] + number ;
-        this.updateNumber(newNumber) 
 
     }
 
@@ -65,6 +57,16 @@ class Calculator extends Component {
                 result:this.state.numbers[newId],
                 numberId: newId ,
             })
+
+    }
+
+
+    // function refered below will monitor the state of the calc comp 
+    // update state objects
+    numberHandler(number){
+
+        const newNumber = this.state.numbers[this.state.numberId] + number ;
+        this.updateNumber(newNumber) 
 
     }
 
@@ -97,7 +99,7 @@ class Calculator extends Component {
     clearHandler(){
 
         this.setState({
-            result:'',
+            result:"",
             numbers:["", ""],
             numberId:0
         })
@@ -113,7 +115,7 @@ class Calculator extends Component {
             return ;
         }
 
-        this.props.CalculateApi.calculate(
+        this.props.CalculatorApi.calculate(
             this.state.numbers[0],
             this.state.numbers[1],
             this.state.operation,
@@ -134,7 +136,7 @@ class Calculator extends Component {
             result:newNumbers[newId],
             numbers:newNumbers,
             numberId:newId,
-            operation:''
+            operation:""
 
         })
     }
