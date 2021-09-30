@@ -3,9 +3,9 @@
 #include <string>
 #include <tuple>
 
-#include "iResourceFactory.h"
+#include "IResourceFactory.h"
 
-class CalcResourceFactory : public iResourceFactory {
+class CalcResourceFactory : public IResourceFactory {
 
 public:
 

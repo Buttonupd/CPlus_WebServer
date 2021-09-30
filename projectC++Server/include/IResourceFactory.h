@@ -1,12 +1,12 @@
 #pragma once
 
 #include <memory>
-#include <restbed>
+#include <restbed/resource.hpp>
 
 using namespace std;
 using namespace restbed;
 
-class iResourceFactory {
+class IResourceFactory {
 
 public:
 
