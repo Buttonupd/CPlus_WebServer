@@ -1,6 +1,5 @@
 {
     "files.associations": {
-        "iostream": "cpp",
         "restbed": "cpp",
         "any": "cpp",
         "array": "cpp",
@@ -73,6 +72,8 @@
         "thread": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "iostream": "cpp"
+
     }
 }
