@@ -1,10 +1,8 @@
 #pragma once
 
 #include <memory>
-#include <restbed/settings.hpp>
+#include  <restbed>
 
-
-using namespace std;
 using namespace restbed;
 
 class IServiceSettingsFactory {

@@ -1,7 +1,7 @@
 #pragma once
 
 #include <memory>
-#include <restbed/resource.hpp>
+#include <restbed>
 
 using namespace std;
 using namespace restbed;
