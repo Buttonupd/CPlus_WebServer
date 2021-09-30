@@ -1,3 +1,0 @@
-/home/kali/Applications/Engineering/cPlus+/projectC++Server/build/CMakeFiles/rebuild_cache.dir
-/home/kali/Applications/Engineering/cPlus+/projectC++Server/build/CMakeFiles/edit_cache.dir
-/home/kali/Applications/Engineering/cPlus+/projectC++Server/build/CMakeFiles/CalculatorAPI.dir
