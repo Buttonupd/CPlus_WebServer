@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "restbed": "cpp"
+        "restbed": "cpp",
     },
-    "cmake.sourceDirectory": "${workspaceFolder}/projectC++Server"
+    "cmake.sourceDirectory": "${workspaceFolder}/projectC++Server",
+    
 }

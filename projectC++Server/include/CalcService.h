@@ -2,7 +2,7 @@
 
 #include "IService.h"
 
-#include "IResourceFactory.h"
+#include "iResourceFactory.h"
 #include "IServiceSettingsFactory.h"
 
 class CalcService : public IService {
@@ -10,7 +10,7 @@ class CalcService : public IService {
 public:
 
     CalcService(
-        shared_ptr<IResourceFactory> resource_factory, 
+        shared_ptr<iResourceFactory> resource_factory, 
         shared_ptr<IServiceSettingsFactory> settings_factory);
     void start() final;
 
